@@ -101,7 +101,7 @@ func marshalToCSV(statsMap map[string]*SessionStats) string {
 		stats = append(stats, v)
 	}
 
-	csvContent, err := gocsv.MarshalString(stats) // Get all clients as CSV string
+	csvContent, err := gocsv.MarshalString(stats)
 	if err != nil {
 		panic(err)
 	}
